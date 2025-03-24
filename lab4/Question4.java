@@ -17,5 +17,6 @@ public class Question4 {
         else{
             System.out.println("Not a Perfect Number");
         }
+        sc.close();
     }
 }
