@@ -1,5 +1,5 @@
 
-public class SimpleInterest {
+public class Question5 {
     
     public static void main(String[] args) {
         double p = Double.parseDouble(args[0]);

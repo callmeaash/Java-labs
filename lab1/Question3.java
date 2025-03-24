@@ -1,5 +1,5 @@
 
-public class Rectangle {
+public class Question3 {
     public static void main(String[] args) {
         int length = Integer.parseInt(args[0]);
         int breadth = Integer.parseInt(args[1]);

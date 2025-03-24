@@ -1,4 +1,4 @@
-public class CtoF {
+public class Question4 {
     
     public static void main(String[] args) {
         double C = Double.parseDouble(args[0]);
