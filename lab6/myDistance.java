@@ -8,11 +8,11 @@ class Distance{
         inch = i;
     }
 
-    public void displayDistance(){
+    void displayDistance(){
         System.out.println("Distance: " + feet + " feets " + inch + " inches ");
     }
 
-    public static Distance addDistance(Distance d1, Distance d2){
+    static Distance addDistance(Distance d1, Distance d2){
         int totalFeet = d1.feet + d2.feet + (d1.inch + d2.inch) / 12;
         int totalInch = (d1.inch + d2.inch) % 12;
         return new Distance(totalFeet, totalInch);

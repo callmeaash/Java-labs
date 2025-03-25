@@ -3,14 +3,14 @@ import java.util.Scanner;
 class Circle {
     private double radius;
 
-    public Circle(double r){
+    Circle(double r){
         radius = r;
     }
 
-    public double findArea(){
+    double findArea(){
         return (3.14 * radius * radius);
     }
-    public double findCircumference(){
+    double findCircumference(){
         return (2 * 3.14 * radius);
     }
     

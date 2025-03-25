@@ -5,17 +5,17 @@ class Box{
     private int breadth;
     private int height;
 
-    public Box(int l, int b, int h){
+    Box(int l, int b, int h){
         length= l;
         breadth = b;
         height = h;
     }
 
-    public int getVolume(){
+    int getVolume(){
         return (length * breadth * height);
     }
 
-    public int getSurfaceArea(){
+    int getSurfaceArea(){
         return (2 * (length*breadth + breadth*height + length*height));
     }
 }

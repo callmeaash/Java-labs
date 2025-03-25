@@ -5,9 +5,9 @@ class Student {
     String address = "Machhapokhari";
     int roll = 2;
 
-    public Student(){}
+    Student(){}
 
-    public Student(String n, String a, int r){
+    Student(String n, String a, int r){
         name = n;
         address = a;
         roll = r;

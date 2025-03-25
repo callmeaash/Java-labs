@@ -2,29 +2,29 @@ public class Time {
 
     int hours, minutes, seconds;
 
-    public Time(int h, int m, int s){
+    Time(int h, int m, int s){
         hours = h;
         minutes = m;
         seconds = s;
     }
 
-    public void displayTime(){
+    void displayTime(){
         System.out.printf("%02d:%02d:%02d%n", hours, minutes, seconds);
     }
 
-    public static Time addTime(Time t1, Time t2){
+    static Time addTime(Time t1, Time t2){
         int totalSeconds = (t1.hours * 3600 + t1.minutes * 60 + t1.seconds) + (t2.hours * 3600 + t2.minutes * 60 + t2.seconds);
         
         return fromSeconds(totalSeconds);
     }
 
-    public static Time subTime(Time t1, Time t2){
+    static Time subTime(Time t1, Time t2){
         int totalSeconds = (t1.hours * 3600 + t1.minutes * 60 + t1.seconds) - (t2.hours * 3600 + t2.minutes * 60 + t2.seconds);
         
         return fromSeconds(totalSeconds);
     }
 
-    public static Time fromSeconds(int totalSeconds){
+    static Time fromSeconds(int totalSeconds){
         int newHours = totalSeconds / 3600;
         int newMinutes = (totalSeconds % 3600) / 60;
         int newSeconds = totalSeconds % 60;
