@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 class Distance{
-    private int feet;
-    private int inch;
+    private int feet, inch;
     public Distance(int f, int i){
         feet = f;
         inch = i;
@@ -33,5 +32,6 @@ public class myDistance {
         d[1].displayDistance();
         Distance result = Distance.addDistance(d[0], d[1]);
         result.displayDistance();
+        sc.close();
     }
 }
